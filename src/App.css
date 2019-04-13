@@ -1,0 +1,39 @@
+.App {
+  margin:2rem auto;
+  width:80%;
+}
+
+.Graphs {
+  margin:1rem 0;
+  padding:1rem;
+  background:#f9f9f9;
+}
+
+.Graph {
+  border:1px solid #ccc;
+  border-bottom:none;
+  padding:1rem;
+}
+.Graph:last-child {
+  border-bottom:1px solid #ccc;
+}
+
+.Graph-Button {
+  margin:0 auto 1rem auto;
+  display:block;
+}
+
+.Vertices {
+
+}
+
+.Vertex {
+  width:50px;
+  height:50px;
+  background:#111;
+  border:2px solid #ccc;
+  color: #fff;
+  border-radius:50%;
+  text-align:center;
+  line-height:50px;
+}
