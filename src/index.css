@@ -12,3 +12,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+table {
+  width:100%;
+
+}
+
+td {
+  width:33.33%;
+  border: 1px solid #ccc;
+  padding:0.5rem;
+}
+
+th {
+  border-bottom:1px solid #333;
+}
+
+td .Vertex {
+  display: inline-block;
+}
