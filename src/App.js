@@ -47,16 +47,6 @@ class App extends Component {
           Create Graph
         </button>
 
-        <input
-          type='text'
-          value={this.state.graphName}
-          onChange={this.handleChange} />
-
-        <button
-          onClick={this.createGraph}>
-          Add Path
-        </button>
-
         <div className='Graphs'>
           {this.state.graphs.map(graph => (
             <Graph

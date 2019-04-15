@@ -5,10 +5,10 @@ class Vertex extends Component {
     super(props);
 
     this.state = {
-      edges: []
+      edges: new Map()
     };
 
-    this.onDrop = this.onDrop.bind(this)
+    this.onDrop = this.onDrop.bind(this);
   }
 
   onDrop(e) {

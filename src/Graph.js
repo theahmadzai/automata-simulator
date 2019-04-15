@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Vertex from './Vertex';
-
+import Path from './Path';
 
 class Graph extends Component {
   constructor(props) {
@@ -28,13 +28,28 @@ class Graph extends Component {
           className='Graph-Button'
           onClick={this.addVertex}>Add Vertex</button>
 
-        <div className='Vertices'>
+        <table>
+          <tr>
+            <th>Vertices</th>
+            <th>A</th>
+            <th>B</th>
+          </tr>
+
           {this.state.vertices.map(vertex => (
-            <Vertex
-              key={vertex}
-              name={vertex} />
+            <tr>
+              <td className='Vertices'>
+                <Vertex key={vertex} name={vertex} />
+              </td>
+              <td>
+                <Path />
+              </td>
+              <td>
+                <Path />
+              </td>
+            </tr>
           ))}
-        </div>
+        </table>
+
       </div>
     );
   }
